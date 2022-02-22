@@ -41,13 +41,9 @@ become_method=sudo
 become_user=root
 become_ask_pass=False
 ```
-#### **create ansible role**
+#### **create ansible role for wordpress installation**
 ```
 cd /etc/ansible/roles
-
-ansible-galaxy init nginx
-ansible-galaxy init wordpress
-ansible-galaxy init mysql
 ```
 #### **Generate ssh key for ansible machine**
 ```

@@ -1,16 +1,24 @@
 ---
+# Nginx settings
+domain_name: "192.168.33.11:80"
+nginxfile: "default"
+
 #System Settings
 php_modules: ['php-curl','php-gd','php-mbstring','php-xml','php-xmlrpc','php-soap','php-intl','php-zip']
+
+
+#HTTP Settings
+http_host: "wp"
+http_conf: "wp.conf"
+http_port: "80"
 
 #MySQL Settings
 mysql_root_password: "password"
 mysql_db: "wordpress"
 mysql_user: "wordpressuser"
 mysql_password: "password"
-mysql_host: "192.168.33.12"
+mysql_file: "mysqld.cnf"
+mysqlclient_address: "192.168.33.11"
+mysqlserver_address: "192.168.33.12"
 
-#HTTP Settings
-http_host: "wp"
-http_conf: "wp.conf"
-http_port: "80"
-# vars file for wordpress
+

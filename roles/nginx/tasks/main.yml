@@ -1,0 +1,16 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+    update_cache: yes
+  tags: [ nginx ] 
+
+- name: Proxy_pass nginx default file
+  template:
+    src: "files/default.j2" 
+    dest: "/etc/nginx/sites-available/{{ nginxfile }}"
+  notify: Reload nginx
+  tags: [ nginx ]  
+
+# tasks file for nginx

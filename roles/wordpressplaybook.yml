@@ -1,0 +1,12 @@
+---
+- hosts: nginx
+  roles:
+      - nginx
+- hosts: wordpress
+  roles:
+      - wordpress 
+- hosts: mysql
+  roles:
+      - mysql
+
+

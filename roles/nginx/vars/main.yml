@@ -1,0 +1,5 @@
+---
+# Nginx settings
+domain_name: "192.168.33.11:80"
+nginxfile: "default"
+# vars file for nginx
